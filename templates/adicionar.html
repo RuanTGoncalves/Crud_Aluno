@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<h2>Adicionar Produto</h2>
+
+<div class="formulario">
+    <form method="POST">
+        <label>Nome do Produto:</label>
+        <input type="text" name="nome" placeholder="Ex: Arroz 5kg" required>
+
+        <label>Categoria:</label>
+        <input type="text" name="categoria" placeholder="Ex: Alimentos" required>
+
+        <label>Preço (R$):</label>
+        <input type="text" name="preco" placeholder="Ex: 25.90" required>
+
+        <label>Quantidade em Estoque:</label>
+        <input type="number" name="quantidade" placeholder="Ex: 100" required>
+
+        <button type="submit">Salvar Produto</button>
+    </form>
+</div>
+{% endblock %}
